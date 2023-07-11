@@ -1,0 +1,8 @@
+  1  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    2    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    3  amazon-linux-extras install epel
+    4  amazon-linux-extras install java-openjdk11 -y
+    5  yum install jenkins -y
+    6  systemctl restart jenkins.service
+    7  systemctl status jenkins.service
+    8  cat /var/lib/jenkins/secrets/initialAdminPassword
