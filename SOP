@@ -1,10 +1,26 @@
-  1  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-    2    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+**** Launch the instance(JenkinInstance) ,with editing the network settings.
+
+//switch to root user
+
+---  sudo -i
+
+start entering following commands
+
+    1  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    2  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
     3  amazon-linux-extras install epel
     4  amazon-linux-extras install java-openjdk11 -y
     5  yum install jenkins -y
     6  systemctl restart jenkins.service
     7  systemctl status jenkins.service
     8  cat /var/lib/jenkins/secrets/initialAdminPassword
-        its shows password
+        its shows password,(copy it)
+      copy the public ip address of jenkins instance ,paste it in different with :8080
+      there ,paste the password 
+
+Jenkins starts installing
+
+Once its installed, Give username and password 
+
+
 
