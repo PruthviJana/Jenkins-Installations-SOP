@@ -6,3 +6,5 @@
     6  systemctl restart jenkins.service
     7  systemctl status jenkins.service
     8  cat /var/lib/jenkins/secrets/initialAdminPassword
+        its shows password
+
